@@ -1,0 +1,29 @@
+.container{
+ margin-top: 10px;
+}
+
+.jumbotronHome{
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: .3rem;
+}
+
+.jumbotronPost {
+    margin-top: 10px;
+    height: Auto;    
+}
+
+.list {
+    margin: 2px;
+    box-shadow: black 10px;        
+}
+
+.list:hover{
+    background-color:aliceblue;    
+    transition: step-end;
+    -webkit-transition:all .1s ease-in-out;
+    
+    margin-left: -3px;
+    margin-right: -3px;
+}

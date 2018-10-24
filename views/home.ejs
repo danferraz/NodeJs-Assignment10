@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Employee</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/EmpStyle.css">
+    <link rel="icon" href="images/emp.png" type="image/gif" sizes="12x12">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <%- include('partials/header') %>
+            <div class="jumbotronHome">
+                <div class="col-sm-6">
+                    <div class="" align="left">
+                        <!-- loop over employee details and render them -->
+                        <% EMPLOYEES.forEach((EMP) => { console.log("ID: " + EMP.IdNumber + " Name: " +EMP.Name); %>
+                            <a href="/Employee/<%= EMP.IdNumber %>" class="list-group-item list">
+                                <h5 class="list-group-item-text">
+                                    <%= EMP.Name %>
+                                </h5>
+                                <p class="list-group-item-text">
+                                    <%= EMP.Department %>
+                                </p>
+                            </a>
+                            <% }) %>
+                    </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
